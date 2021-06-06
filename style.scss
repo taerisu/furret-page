@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
+
+$card-color: #1a1a1a;
+
+@mixin background-gradient {
+  background-color: #52ff86;
+  background-image: linear-gradient(45deg, #52ff86 0%, #52dfff 100%);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  @include background-gradient;
+
+  height: 100vh;
+  display: grid;
+  place-items: center;  
+}
+
+.block {
+  background-color: $card-color;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1cm;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  .icon {
+    border-radius: 1cm;
+  }
+}
+
+button {
+  @include background-gradient;
+
+  border: none;
+  margin: 1em;
+  padding: 1em 2em;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10cm;
+
+  &:hover {
+    background-position: right center;
+    text-decoration: none;
+  }
+}
