@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap);
 
 $card-color: #1a1a1a;
 
 @mixin background-gradient {
-  background-color: #52ff86;
-  background-image: linear-gradient(45deg, #52ff86 0%, #52dfff 100%);
+  background-color: #5865F2;
+  background-image: linear-gradient(45deg, #58a6f3 0%, #5865F2 50%, #8c58f3 100%);
 }
 
 body {
@@ -32,6 +32,7 @@ body {
 
   .icon {
     border-radius: 1cm;
+    width: 10em;
   }
 }
 
